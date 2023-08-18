@@ -1,0 +1,7 @@
+.logo img{
+    width: 20px;
+}
+img, svg {
+    vertical-align: middle;
+    width: 60px;
+}
