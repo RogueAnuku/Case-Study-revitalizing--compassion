@@ -9,7 +9,9 @@
     .logo img {
       width: 100px;
     }
- 
+    .h1, h1 {
+    font-size: 1.75rem;
+}
 
 /* Rest of your existing styles */
 .navbar-toggler {
@@ -34,9 +36,9 @@ button:not(:disabled) {
 
 
 .navbar {
-  box-shadow: 0px 7px 30px #009688;
-  --bs-navbar-brand-margin-end: 9rem;
-  padding: 0px;
+    box-shadow: 0px 14px 44px #002A2D;
+    --bs-navbar-brand-margin-end: 9rem;
+    padding: 0px;
 }
     .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -63,6 +65,25 @@ body {
       background-color: black;
       padding: 40px; /* Adjust the padding as needed */
     }
+    .card-body {
+    background-color: black;
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+  }
+  .card-title {
+    color: #f23580 ;}
+    .h5, h5 {
+    font-size: 1.5rem;
+}
+    .card.mb-3{
+margin-top: 8%;
+    }
+    .card.mb-3 {
+      --bs-card-bg: #000;
+    }
+    .card-text {color:white}
+
   </style>
 </head>
 <body>
@@ -71,7 +92,7 @@ body {
       <div class="logo">
         <img src="./images/Logo.gif">
       </div>
-      <a class="navbar-brand" href="#"style="color: #f23580;">
+      <a class="navbar-brand" href="#"style="color: #f23580;font-size: 1.2rem;">
         Anika McPhee
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,10 +120,23 @@ body {
     </div>
   </nav>
 
-  <div class="container">
-    <!-- Your page content goes here -->
-    <h1>Revitalizing Compassion </h1>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Revitalizing compassion</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <img src="./images/users.jpeg" class="card-img-top" alt="...">  </div>
   </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+    <img src="..." class="card-img-bottom" alt="...">
+  </div>
+    
+          
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
