@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Revitalizing Compassion a Case Study </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <style>
     .logo img {
@@ -65,6 +65,9 @@ body {
       background-color: black;
       padding: 40px; /* Adjust the padding as needed */
     }
+    .card {
+      --bs-card-bg: #000;
+    }
     .card-body {
     background-color: black;
     flex: 1 1 auto;
@@ -72,10 +75,11 @@ body {
     color: var(--bs-card-color);
   }
   .card-title {
-    color: #f23580 ;}
-    .h5, h5 {
-    font-size: 1.5rem;
+    color: #f23580;
+    font-weight: 500;
+    font-size: 1.75rem;
 }
+
     .card.mb-3{
 margin-top: 8%;
 max-width: 100%;
@@ -83,8 +87,33 @@ max-width: 100%;
     .card.mb-3 {
       --bs-card-bg: #000;
     }
-    .card-text {color:white; font-size: .75rem;}
+    .card-text {
+    color: white;
+    font-size: 1.2rem;
+}
+    .text-muted {
+    --bs-text-opacity: 1;
+    color: #0dcaf0!important;
+}
     .col-md-4 img{ width: 100%;}
+    .mb-0 {
+    margin-bottom: 4%!important;
+}
+.blockquote-footer {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 0.75em;
+    color: #6c757d;
+}
+.blockquote {
+    margin-right: 24%;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    margin-left: 17%;
+}
+.blockquote>:last-child {
+    margin-bottom: 10%;
+}
 
   </style>
 </head>
@@ -126,17 +155,14 @@ max-width: 100%;
     <div class="card-body">
       <h5 class="card-title">Revitalizing compassion</h5>
       <p class="card-text">The redesign of Roger Neilson's House.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted" style="color: aqua;">A Case Study by: ANIKA MCPHEE, JULIE NG, CHIARA FALLANI, RAINA AL HUSSAMI</small></p>
       <img src="." class="card-img-top" alt="...">  </div>
   </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">The Problem</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-    <img src="." class="card-img-bottom" alt="...">
-  </div>
+      
+  <blockquote class="blockquote text-right">
+    <p class="mb-0" style="color: white; font-style: italic; font-weight: 100;">"A rich and effective computational system must have a friendly user interface with appealing usability features that provides excellent user experience. In order to develop interactive systems with the best user experience, an innovative iterative approach to user interface engineering is required because it is one of the most challenging areas given the diversity of knowledge, ideas, skills and creativity needed for building smart interfaces in order to succeed in today’s rapidly paced and tough, competitive marketplace"</p>
+    <footer class="blockquote-footer">Dey, Pradip & Sinha, Bhaskar Raj & Amin, Mohammad & Badkoobehi, Hassan <cite title="Source Title"> (2019). Best Practices for Improving User Interface Design. International Journal of Software Engineering & Applications. 10. 71-83. 10.5121/ijsea.2019.10505.</cite></footer>
+  </blockquote>
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row no-gutters">
       <div class="col-md-4">
@@ -145,8 +171,16 @@ max-width: 100%;
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title">Empathize</h5>
-          <p class="card-text">A strong focus was placed on gaining a deep understanding of the user research. Recognizing the user's needs, behaviors, desires, and usage patterns was deemed crucial for enhancing usability and creating products that resonate with users. To accomplish this objective, we employed diverse methodologies, including online surveys, user interviews, usability studies, and conducted a comprehensive competitive analysis and completed a hueristic analysis, an empathy map and affinity digram. </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+         
+              
+          <p class="card-text">To better understand our users, we employed diverse approaches to analyze their behaviors, desires, necessities, and objectives.</p>
+          <p class="card-text"><small class="text-muted">User interviews</small></p>
+          <p class="card-text"><small class="text-muted">Online Surveys</small></p>
+          <p class="card-text"><small class="text-muted">Usability Study</small></p>
+          <p class="card-text"><small class="text-muted">Heuristic Evaluation</small></p>
+          <p class="card-text"><small class="text-muted">Competitive analysis</small></p>
+          <p class="card-text"><small class="text-muted">Empathy Map</small></p>
+          <p class="card-text"><small class="text-muted">Affinity Diagram </small></p>
         </div>
       </div>
     </div>
@@ -160,8 +194,11 @@ max-width: 100%;
         <div class="card-body">
           <h5 class="card-title">Define</h5>
           <p class="card-text">The next step in the design process was to define the problem. For this step, we crafted user insight statements and the problem statement. We defined the problem to be: The volunteer application process has been redesigned to maximize a positive user experience. We've observed that users are less likely to complete the application process if required to re-enter information. following the problem statement, we conducted a feature prioritization matrix and user journey mapping.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
+           <p class="card-text"><small class="text-muted">User Insight Statement</small></p>
+           <p class="card-text"><small class="text-muted">Problem Statement</small></p>
+           <p class="card-text"><small class="text-muted">Feature Proiritization Matrix</small></p>
+           <p class="card-text"><small class="text-muted">User Journey Map</small></p>
+          </div>
       </div>
     </div>
   </div> 
@@ -174,7 +211,7 @@ max-width: 100%;
         <div class="card-body">
           <h5 class="card-title">Ideate</h5>
           <p class="card-text">How might we save a user's information to make the application process less redundant? The key performance indicators that will measure the level of success are by an increased volume of applications and time spent on the task. following the problem statement, we conducted a feature prioritization matrix and user journey mapping.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">User Insight Statement</small></p>
         </div>
       </div>
     </div>
