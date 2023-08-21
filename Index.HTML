@@ -37,9 +37,10 @@ button:not(:disabled) {
 
 .navbar {
     box-shadow: 0px 14px 21px #0f484c;
-    --bs-navbar-brand-margin-end: 9rem;
-    padding: 0px;
+    --bs-navbar-brand-margin-end: 2rem; /* Adjust as needed */
+    padding: 0;
 }
+
     .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
@@ -89,12 +90,13 @@ max-width: 100%;
     }
     .card-text {
     color: white;
-    font-size: 1.2rem;
+    
 }
     .text-muted {
     --bs-text-opacity: 1;
     color: #0dcaf0!important;
 }
+
     .col-md-4 img{ width: 100%;}
     .mb-0 {
     margin-bottom: 4%!important;
@@ -102,27 +104,30 @@ max-width: 100%;
 .blockquote-footer {
     margin-top: -1rem;
     margin-bottom: 1rem;
-    font-size: 0.75em;
+    font-size: 0.5rem;
     color: #6c757d;
 }
 .blockquote {
-    margin-right: 24%;
+    margin-right: 10%;
     margin-bottom: 1rem;
     font-size: 1.25rem;
     margin-left: 17%;
+    margin-top: 8%;
 }
 .blockquote>:last-child {
     margin-bottom: 10%;
     margin-bottom: 10%;
+    font-size: .5rem;
 }
 @media (min-width: 768px){
-.col-md-4 {
+  .col-md-4 {
     flex: 0 0 auto;
-    width: 61.333333%;
+    width: 58.333333%;
 }
 .col-md-8 {
     flex: 0 0 auto;
-    width: 38.666667%;
+    width: 41.666667%;
+
 }
 }
 
@@ -173,16 +178,15 @@ max-width: 100%;
     <p class="mb-0" style="color: white; font-style: italic; font-weight: 100;">"A rich and effective computational system must have a friendly user interface with appealing usability features that provides excellent user experience. In order to develop interactive systems with the best user experience, an innovative iterative approach to user interface engineering is required because it is one of the most challenging areas given the diversity of knowledge, ideas, skills and creativity needed for building smart interfaces in order to succeed in today’s rapidly paced and tough, competitive marketplace"</p>
     <footer class="blockquote-footer">Dey, Pradip & Sinha, Bhaskar Raj & Amin, Mohammad & Badkoobehi, Hassan <cite title="Source Title"> (2019). Best Practices for Improving User Interface Design. International Journal of Software Engineering & Applications. 10. 71-83. 10.5121/ijsea.2019.10505.</cite></footer>
   </blockquote>
-  <div class="card mb-3" style="max-width: 100%;">
+  
+  <div class="card mb-3" >
     <div class="row no-gutters">
-      <div class="col-md-8">
-        <img src="./images/users.jpeg" alt="...">
+      <div class="col-md-4">
+        <img src="./images/users.jpg" alt="...">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Empathize</h5>
-         
-              
+          <h5 class="card-title">Empathy</h5>
           <p class="card-text">To better understand our users, we employed diverse approaches to analyze their behaviors, desires, necessities, and objectives.</p>
           <p class="card-text"><small class="text-muted">User interviews</small></p>
           <p class="card-text"><small class="text-muted">Online Surveys</small></p>
@@ -191,10 +195,10 @@ max-width: 100%;
           <p class="card-text"><small class="text-muted">Competitive analysis</small></p>
           <p class="card-text"><small class="text-muted">Empathy Map</small></p>
           <p class="card-text"><small class="text-muted">Affinity Diagram </small></p>
-        </div>
+          </div>
       </div>
     </div>
-  </div>
+  </div> 
   <div class="card mb-3" >
     <div class="row no-gutters">
       <div class="col-md-4">
