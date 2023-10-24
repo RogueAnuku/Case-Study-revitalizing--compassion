@@ -35,29 +35,62 @@ button:not(:disabled) {
 }
 
 
-.navbar {
-    box-shadow: 0px 14px 21px #0f484c;
-    --bs-navbar-brand-margin-end: 2rem; /* Adjust as needed */
-    padding: 0;
+.menu-icon-img img {
+        width: 46px;
+    }
+    .bg-dark {
+        background-color: #000 !important;
+    }
+.menu-icon-img {   width: 38px}
+body {
+    background-color: black;
 }
 
-    .navbar-toggler {
-    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    font-size: var(--bs-navbar-toggler-font-size);
-    line-height: 1;
-       border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
-    border-radius: var(--bs-navbar-toggler-border-radius);
-    transition: var(--bs-navbar-toggler-transition);
+.navbar {
+    box-shadow: -1px 1px 14px 0px #00bFF0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    cursor: pointer;
-    color: transparent;
+.navbar-name {
+    font-size: .75rem;
+    color: #F23580;
 }
-.navbar-toggler img{
-  width: 48px;
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: #000;/* border-color: rgba(255,255,255,.1); */
+}
+.navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color:#6e7175; /* Default link color */
+    transition: color 0.3s; /* Add a smooth transition for color change */
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00BFF0; /* Change the color to your desired hover color */
+}
+.bg-dark {
+    background-color: #000!important;
+}
+.menu-icon-img img {
+    width: 50px;
+}
+.menu-icon-img img {
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.menu-icon-img:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
 }
 .navbar-nav.me-auto.mb-2.mb-lg-0 {
   margin-left: 28%;
+}
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: right;
 }
 body {
       background-color: black;
@@ -134,38 +167,37 @@ max-width: 100%;
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black;">
-    <div class="container-fluid" style="background-color: black;">
-      <div class="logo">
-        <img src="./images/Logo.gif">
-      </div>
-      <a class="navbar-brand" href="#"style="color: #f23580;font-size: 1.2rem;">
-        Anika McPhee
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="./images/menu.png" alt="Toggle Navigation">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" style="color: white; font-size: .9rem;" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active"style="color: white; font-size: .9rem;"  aria-current="page" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="color: white; font-size: .9rem;" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="color: white; font-size: .9rem;" aria-current="page" href="#">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="color: white; font-size: .9rem;" aria-current="page" href="#">Contact</a>
-          </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="./Image/Logo.gif" width="75px">
+        <span class="navbar-name">ANIKA MCPHEE</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menu-icon-img"><img src="./images/menu.png"> </div>
+    </button>
+    <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#Home">Home</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
         </ul>
-      </div>
     </div>
-  </nav>
+</nav>
 
   <div class="card mb-3">
     <div class="card-body">
