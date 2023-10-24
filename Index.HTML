@@ -35,7 +35,7 @@ button:not(:disabled) {
 }
 
 
-.menu-icon-img img {
+  .menu-icon-img img {
         width: 46px;
     }
     .bg-dark {
@@ -73,6 +73,7 @@ body {
 }
 .bg-dark {
     background-color: #000!important;
+    height: 80px;
 }
 .menu-icon-img img {
     width: 50px;
@@ -91,6 +92,7 @@ body {
     display: flex!important;
     flex-basis: auto;
     justify-content: right;
+    padding-right: 2%;
 }
 body {
       background-color: black;
@@ -103,11 +105,12 @@ body {
       --bs-card-bg: #000;
     }
     .card-body {
+    margin-top: 16%;
     background-color: black;
     flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color);
-  }
+}
   .card-title {
     color: #f23580;
     font-weight: 500;
@@ -152,6 +155,7 @@ max-width: 100%;
     margin-bottom: 10%;
     font-size: .5rem;
 }
+
 @media (min-width: 768px){
   .col-md-4 {
     flex: 0 0 auto;
@@ -162,6 +166,7 @@ max-width: 100%;
     width: 41.666667%;
 
 }
+
 }
 
   </style>
@@ -169,7 +174,7 @@ max-width: 100%;
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
-        <img src="./Image/Logo.gif" width="75px">
+        <img src="./images/Logo.gif" width="75px">
         <span class="navbar-name">ANIKA MCPHEE</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -360,8 +365,81 @@ max-width: 100%;
 
   </div>
   
-  
-</div>
+  <footer class="footer" >
+   <style>
+    /* Adjust the margin-top to create space between content and footer if needed */
+.wrapper .footer {
+    margin-top: 10px;
+}
+
+/* Your existing footer styles */
+.footer {
+ 
+    box-shadow: -1px 1px 14px 0px #00BFF0;
+    width: 102%;
+    background-color: #000;
+}
+
+
+/* Add this CSS to your existing stylesheet */
+
+#footer-image {
+    margin-top: 60px;
+    width: 110px;
+}
+
+.footer-text {
+    font-size: 10px;
+    color: #495057;
+    padding-right: 10%;
+}
+/* Style for the footer links */
+.footer-links {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #f23580;
+    transition: text-decoration 0.3s; /* Add a smooth transition effect */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    color: #00BFF0; /* Change the link color on hover */
+}
+.container-fluid footer img {
+    margin-left: 37%;
+    justify-content: center;
+    width: 25%;
+    margin-top: -63px;
+}
+   </style>
+    <div class="row footer">
+        <div class="col-md-6" style=" margin-top: 0;">
+            <ul class="footer-links">
+                <li><a href="" target="_blank">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 text-right"> <!-- This column will align its content to the right -->
+            <div class="footer-content">
+                <img id="footer-image" src="./images/Logo.gif" style="margin-top: 60px; width: 66px;">
+                <p class="footer-text">© Proudly created by Anika McPhee 2023.</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
 </div> 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
