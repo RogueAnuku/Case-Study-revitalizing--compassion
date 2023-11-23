@@ -55,20 +55,18 @@ color: #00BFF0; /* Change the color to your desired hover color */
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: 0px; 
-  margin-left: 0px; 
-    flex-direction: column;
-    align-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    flex-direction: row;
 }
 
 .row p{
     padding: 6%;
 }
 .row img {
-    padding: 6%;
+    padding: 2%;
     width: 100%;
 }
-
 .h1, h1 {
     text-align: center;
     margin-top: 10%;
@@ -80,14 +78,12 @@ color: #00BFF0; /* Change the color to your desired hover color */
 }
 
 .h2, h2 {
-    color: #F23580;
-    padding: 4%;
+    padding-left: 5%;
+    color: #00bFF0;
     font-size: 2rem;
 }
-.col-md-4 {
-    padding: 4%;
-    color: white;
-}
+
+
   .col-md-4 img{ width: 100%;}
  
   .list-group-item {
@@ -102,10 +98,7 @@ color: #00BFF0; /* Change the color to your desired hover color */
   .mb-0 {
   margin-bottom: 4%!important;
 }
-.col-md-6 {
-    padding: 12%;
-    color: white;
-}
+
  .col-md-6 img {
     width: 100%;
 }
@@ -164,14 +157,7 @@ color: #00BFF0; /* Change the color to your desired hover color */
 }
 
 @media screen and (min-width:768px){
-    .col-md-4 {
-        max-width: 100%;
-       
-            -ms-flex: 100%;
-             flex: 100%; 
-            max-width: 100%;
-       
-    }
+
 
 }
 @media screen and (min-width: 992px){
