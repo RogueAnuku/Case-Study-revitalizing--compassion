@@ -42,65 +42,72 @@ color: #00BFF0; /* Change the color to your desired hover color */
 }
 
 
-  .container {
-    background-color: black;
-    padding: 40px; /* Adjust the padding as needed */
-  }
-  .row {
+.jumbotron img {
+    width: 100%;
+}
+.row {
+    color: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* margin-right: -15px; */
-    /* margin-left: -15px; */
+    margin-right: 0px; 
+  margin-left: 0px; 
+    flex-direction: column;
+    align-content: center;
 }
- .col-md-6 img {
+
+.row p{
+    padding: 6%;
+}
+.row img {
+    padding: 6%;
     width: 100%;
 }
 
-  .card {
-    --bs-card-bg: #000;
-  }
-  .card-body {
-  margin-top: 16%;
-  background-color: black;
-  flex: 1 1 auto;
-  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
-}
-
-
-  .card.mb-3{
-margin-top: 8%;
-max-width: 100%;
---bs-card-bg: #000;
-  }
-
-  .card-text {
-  color: white;
-  
-}
 .h1, h1 {
+    text-align: center;
+    margin-top: 10%;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
-    
     font-size: 1.6rem;
     color: #F23580;
 }
-
 
 .h2, h2 {
     color: #F23580;
     padding: 4%;
     font-size: 2rem;
 }
+.col-md-4 {
+    padding: 12%;
+    color: white;
+   
+}
   .col-md-4 img{ width: 100%;}
+ 
   .mb-0 {
   margin-bottom: 4%!important;
 }
+.col-md-6 {
+    padding: 12%;
+    color: white;
+}
+ .col-md-6 img {
+    width: 100%;
+}
+.col-md-8 {
+    color: white;
+    padding: 12%;
+}
+
 .col-md-12 {
-    padding: 10%;
+    padding: 12%;
+    color: white;
+}
+.col-md-12 p{
+    color: white;
 }
 
 .footer {
@@ -144,5 +151,22 @@ max-width: 100%;
   
 }
 
+@media screen and (min-width:768px){
+    .col-md-4 {
+        max-width: 100%;
+       
+            -ms-flex: 100%;
+             flex: 100%; 
+            max-width: 100%;
+       
+    }
+
+}
+@media screen and (min-width: 992px){
+    .row p{
+        padding: 0%;
+    }
+    
+}
 
 
