@@ -45,6 +45,10 @@ color: #00BFF0; /* Change the color to your desired hover color */
 .jumbotron img {
     width: 100%;
 }
+.jumbotron {
+    padding: 2rem 1rem;
+  
+}
 .row {
     color: white;
     display: -ms-flexbox;
@@ -81,12 +85,20 @@ color: #00BFF0; /* Change the color to your desired hover color */
     font-size: 2rem;
 }
 .col-md-4 {
-    padding: 12%;
+    padding: 4%;
     color: white;
-   
 }
   .col-md-4 img{ width: 100%;}
  
+  .list-group-item {
+    font-weight: 500;
+    background-color: black;
+    position: relative;
+    color: #00BFF0;
+    display: block;
+    /* background-color: #fff; */
+    border: 1px solid rgb(0 123 255 / 20%);
+}
   .mb-0 {
   margin-bottom: 4%!important;
 }
@@ -163,8 +175,8 @@ color: #00BFF0; /* Change the color to your desired hover color */
 
 }
 @media screen and (min-width: 992px){
-    .row p{
-        padding: 0%;
+    .row p {
+        padding: 6%;
     }
     
 }
