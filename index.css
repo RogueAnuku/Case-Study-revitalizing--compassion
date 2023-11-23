@@ -60,20 +60,17 @@ color: #00BFF0; /* Change the color to your desired hover color */
     flex-direction: row;
 }
 
-.row p{
-    padding: 6%;
-}
 .row img {
     padding: 2%;
     width: 100%;
 }
 .h1, h1 {
+    padding-left: 2%;
     text-align: center;
-    margin-top: 10%;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: #F23580;
 }
 
@@ -82,7 +79,14 @@ color: #00BFF0; /* Change the color to your desired hover color */
     color: #00bFF0;
     font-size: 2rem;
 }
-
+.h3, h3 {
+    text-decoration: underline;
+    font-weight: 300;
+    color: #00BFF0;
+    /* margin-top: -60px; */
+    /* padding-left: 4%; */
+    font-size: 1.75rem;
+}
 
   .col-md-4 img{ width: 100%;}
  
@@ -108,7 +112,7 @@ color: #00BFF0; /* Change the color to your desired hover color */
 }
 
 .col-md-12 {
-    padding: 12%;
+    padding: 6%;
     color: white;
 }
 .col-md-12 p{
@@ -157,14 +161,27 @@ color: #00BFF0; /* Change the color to your desired hover color */
 }
 
 @media screen and (min-width:768px){
+    .col-md-6 {
+        
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
 
 
 }
 @media screen and (min-width: 992px){
-    .row p {
-        padding: 6%;
+   
+    .h1, h1 {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        font-size: 2.6rem;
+        color: #F23580;
     }
-    
 }
 
 
